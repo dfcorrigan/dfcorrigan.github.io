@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Deidre Corrigan</title>
+    </head>
+    <body>
+        <h1>Data Encoding Table</h1>
+        <table border="3" style="width:75%">
+            <tr>
+                <th>Component</th>
+                <th>Type</th>
+                <th>Number of bits/range</th>
+                <th>Description/Comments</th>
+            </tr>
+            <tr>
+                <td>Where?</td>
+                <td>ASCII</td>
+                <td>120 bits</td>
+                <td>Names can be long, so we need enough space to make the name recognizable, at the very least.</td>
+            </tr>
+            <tr>
+                <td>Body of water?</td>
+                <td>ASCII</td>
+                <td>72 bits</td>
+                <td>Only determines the body of water. Most common names for bodies of water are under 9 characters.</td>
+            </tr>
+            <tr>
+                <td>What is seen in the water?</td>
+                <td>ASCII</td>
+                <td>360 bits</td>
+                <td>Need many bits to convey several chunks of information, as they could see many things in the water, or nothing at all. Includes space for commas and spaces.</td>
+            </tr>
+            <tr>
+                <td>What kind of animals did you see?</td>
+                <td>ASCII</td>
+                <td>360 bits</td>
+                <td>Another list that can have many answers. Animals can have a wide range, depending on where the person is.</td>
+            </tr>
+            <tr>
+             <td>How many did you see?</td>
+                <td>Number</td>
+                <td>5 bits</td>
+                <td>Rough estimate. Can't be too big of a number.</td>
+            </tr>
+            <tr>
+                <td>What kinds of plants?</td>
+                <td>ASCII</td>
+                <td>360 bits</td>
+                <td>General plant life terms. Spaces and commas taken into account as well.</td>
+            </tr>
+        </table>
+
+    </body>
+</html>
